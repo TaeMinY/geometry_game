@@ -1,3 +1,5 @@
+// 해당 코드는 Visual Studio 2022 를 기준으로 개발하였습니다.
+
 #pragma once
 #define MAPSIZEX 80
 #define MAPSIZEY 20

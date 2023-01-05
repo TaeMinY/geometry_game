@@ -1,4 +1,6 @@
-﻿#include<stdio.h>
+﻿// 해당 코드는 Visual Studio 2022 를 기준으로 개발하였습니다.
+
+#include<stdio.h>
 #include<windows.h>
 
 #include "main.h"
