@@ -63,15 +63,14 @@ int gamescreen(int rt) {
             }
             else if (k == 2) { //re 게임 여부를 물어본다.
                 system("cls");
-                printf("[게임종료]\n다시하기 : 숫자 1을 입력\n메뉴 : 2\n입력 : ");
+                printf("[게임종료]\n다시하기 : 숫자 1을 입력\n메뉴 : 1을 제외한 숫자\n입력 : ");
                 int in;
                 fflush(stdin);
                 scanf_s("%d", &in);
 
                 if (in == 1) {
                     return 1;
-                }
-                else if (in == 2) {
+                }else {
                     system("cls");
                     return -1;
                 }
