@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<conio.h>
 #include<windows.h>
@@ -60,8 +59,13 @@ int mainController() {
             if (c == 1) {
 
                 //저장될 닉네임 입력
-                printf("저장 될 닉네임을 입력해주세요 : ");
+                printf("저장 될 닉네임을 입력해주세요(+와 -는 입력 금지입니다.) : ");
                 scanf_s("%s", &user.name, 30);
+
+                while (regexName(user.name)) {
+                    printf("저장 될 닉네임을 다시 입력해주세요(+와 -는 입력 금지입니다.) : ");
+                    scanf_s("%s", &user.name, 30);
+                }
 
                 //rank_result를 타입 a로 받아 가져오기, 만약 없다면 생성
                 FILE* fp;

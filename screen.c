@@ -34,8 +34,8 @@ int mainscreen(void) {
             i++;
 
         }
+        fclose(fp);
     }
-    fclose(fp);
 
     //저장된 유저들을 점수를 기준으로 sort
     sort(&user, i);

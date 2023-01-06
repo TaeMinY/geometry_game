@@ -38,3 +38,12 @@ void swap(User* user1, User* user2) {
     *user1 = *user2;
     *user2 = tmp;
 }
+
+void regexName(char* name) {
+    for (int i = 0; i < strlen(name); i++) {
+        if (name[i] == '+' || name[i] == '-') {
+            return 1;
+        }
+    }
+    return 0;
+}
